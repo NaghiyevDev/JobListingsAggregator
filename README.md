@@ -101,4 +101,4 @@ Install all dependencies by running:
     Web Scraping Ethics: Always respect the terms of service of the websites you are scraping. Use this tool responsibly to avoid overloading the servers of the scraped sites.
 
 
-Created by Rashad Naghiyev.
+Created by ***Rashad Naghiyev***.
