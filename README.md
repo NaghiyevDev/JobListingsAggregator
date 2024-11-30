@@ -56,6 +56,7 @@ Example input:
 **Scrapers**
 
 **indeed_scraper.py**
+
 This script scrapes job listings from Indeed using Selenium. It retrieves:
     Job title
     Company name
@@ -66,6 +67,7 @@ It supports multiple pages of job listings by iterating through pagination links
 
 
 **linkedin_scraper.py**
+
 This script scrapes job listings from LinkedIn using Selenium. It extracts:
     Job title
     Company name
@@ -74,12 +76,14 @@ This script scrapes job listings from LinkedIn using Selenium. It extracts:
 The scraper also supports pagination, allowing you to scrape multiple pages of job listings.
 
 **main.py**
+
 The main.py script is the entry point of the project. It:
     Takes user inputs for the job title, location, and number of pages to scrape.
     Calls the scrape_indeed_jobs and scrape_linkedin_jobs functions to collect job listings.
     Saves the combined results in data/results.json.
 
 **Requirements**
+
 The following Python packages are required to run the project:  
     selenium: For automating the web browser and interacting with the websites.
     webdriver-manager: Automatically installs and manages the web driver needed by Selenium.
@@ -91,6 +95,7 @@ Install all dependencies by running:
 
 
 **Notes**
+
     Headless Browsing: The scrapers use headless browsing, meaning the browser runs in the background without a graphical interface, which helps speed up the scraping process.
     Rate Limiting: Be cautious of scraping too frequently. Websites like Indeed and LinkedIn may block requests if they detect too many hits from the same IP in a short time. Consider using a delay or rotating IPs in production.
     Web Scraping Ethics: Always respect the terms of service of the websites you are scraping. Use this tool responsibly to avoid overloading the servers of the scraped sites.
